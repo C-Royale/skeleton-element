@@ -1,13 +1,14 @@
 {
   "name": "skeleton-element",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.10",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:bundle": "vue-cli-service build --target lib --name sk-element ./src/components/index.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
+  "main": "./dist/sk-element.umd.min.js",
   "dependencies": {
     "vue": "^2.5.17"
   },
