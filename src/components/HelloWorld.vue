@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <sk-text :msg="msg"></sk-text>
+    <sk-text></sk-text>
+    <sk-record></sk-record>
   </div>
 </template>
 

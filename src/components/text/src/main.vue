@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import Locale from "@src/mixins/locale";
+import Locale from "@/mixins/locale";
 
 export default {
   name: "SkText",
