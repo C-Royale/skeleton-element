@@ -1,13 +1,10 @@
 module.exports = {
+  presets: ["@vue/app"],
   env: {
-    production: {
-      presets: ["@vue/app"]
-    },
-    test: {
-      presets: [["@vue/babel-preset-app", { modules: "commonjs" }]]
-    },
     utils: {
-      presets: ["@babel/preset-env"],
+      presets: [
+        ["@vue/babel-preset-app", { modules: "commonjs", useBuiltIns: false }]
+      ],
       plugins: [
         [
           "module-resolver",

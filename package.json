@@ -1,6 +1,6 @@
 {
   "name": "skeleton-element",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "scripts": {
     "serve": "vue-cli-service serve  ./example/src/main.js",
     "build": "vue-cli-service build --dest ./example/dist ./example/src/main.js",
@@ -8,7 +8,7 @@
     "build:utils": "cross-env BABEL_ENV=utils babel src --out-dir dist --ignore src/*.js,src/components",
     "build:bundle": "npm run build:components && npm run build:utils",
     "lint": "vue-cli-service lint",
-    "test:unit": "cross-env BABEL_ENV=test vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit"
   },
   "main": "./dist/sk-element.umd.min.js",
   "files": [
@@ -25,7 +25,6 @@
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
     "@vue/babel-preset-app": "^3.0.5",
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
